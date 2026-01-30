@@ -24,7 +24,6 @@ def clean_robot_data(df):
 
 def apply_smoothing(df, column_name, window_size=50):
 
-    # 數據平滑化：使用移動平均法過濾雜訊
     # Smoothing: Use moving average to filter noise
 
     df_smoothed = df.copy()

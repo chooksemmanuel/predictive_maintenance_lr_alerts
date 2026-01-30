@@ -15,7 +15,7 @@ class ManualLinearRegression:
         #Train the model
 
         m = len(y)
-        # 增加截距項 (Intercept column of ones)
+        # Add intercept column (column of ones)
         X_final = np.c_[np.ones(X.shape[0]), X]
         self.theta = np.zeros(X_final.shape[1])
 
@@ -25,7 +25,7 @@ class ManualLinearRegression:
             gradient = (1 / m) * np.dot(X_final.T, errors)
             self.theta = self.theta - self.lr * gradient
             
-            # 計算成本 / Compute cost
+            # Compute cost (Mean Squared Error)
             cost = (1 / (2 * m)) * np.sum((np.dot(X_final, self.theta) - y) ** 2)
             self.cost_history.append(cost)
 
