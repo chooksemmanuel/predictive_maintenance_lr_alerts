@@ -25,4 +25,21 @@ This repository contains a comprehensive **Predictive Maintenance System** for i
 ## 🚀 How to Run
 1. **Clone the repository**:
    ```bash
-   git clone [https://github.com/yourusername/LinearRegressionArchitecture_Workshop.git](https://github.com/yourusername/LinearRegressionArchitecture_Workshop.git)
+   git clone https://github.com/chooksemmanuel/predictive_maintenance_lr_alerts.git)
+
+   
+
+   A. HOW TO RUN?
+   python -m src.pmlab.pmlab.run_all
+
+   B. Threshold discovery
+
+MinC = 95th percentile of positive residuals
+
+MaxC = 99th percentile of positive residuals
+
+T = 5 × median sampling interval (seconds)
+
+ C. Outputs generated
+     Outputs/: thresholds.json, events.csv, synthetic_stream.csv
+     Outputs/plots for axis*_events.png

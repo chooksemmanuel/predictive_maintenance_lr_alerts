@@ -8,3 +8,20 @@ Thumbs.db
 .env
 venv/
 (venv)/
+
+.env
+outputs/
+__pycache__/
+*.pyc
+
+# local stuff
+.venv/
+.vscode/
+.env
+
+# python junk
+__pycache__/
+*.pyc
+
+# optional: if you don't want generated outputs
+outputs/
