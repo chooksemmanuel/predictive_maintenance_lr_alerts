@@ -22,5 +22,5 @@ maintenance:
 # Neon connection settings
 database:
   enabled: true  # switch：true or false
-  db_url: "postgresql://neondb_owner:npg_AelL3bdJj8Tt@ep-icy-sound-aiqbpzyi-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
+  db_url: "psql 'postgresql://neondb_owner:npg_gS5DeHQn1CiM@ep-plain-voice-ahowm7at-pooler.c-3.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
   table_name: "robot_telemetry"
